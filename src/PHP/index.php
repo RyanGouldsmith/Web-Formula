@@ -10,6 +10,10 @@
 		</header>
 		<section> 
 			<p> Input into the search function to see the formula </p>
+			<form>
+				<input type="text" placeholder="Enter the Forumla"> </input>
+				<input type="Submit"></input>
+			</form>
 		</section>
 	</main>
 </body>
