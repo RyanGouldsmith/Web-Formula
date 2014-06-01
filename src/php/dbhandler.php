@@ -6,24 +6,17 @@
 		private $host = ""; 
 		private $database = "";
 		private $table_post = "";
-<<<<<<< HEAD
-		private $connection = "";
-=======
-		private $connection;
->>>>>>> development
-		
+		private $connection;		
 		/**
 		 * Makes the initial connection to the database, by taking the private member fields as parmeters
 		 */
 		public function __construct(){
-<<<<<<< HEAD
 				$this->connection = mysqli_connect($this->host, $this->username, $this->password, $this->database);
 		}
 		/** 
 		 * Send the Query to the Database
 		 */
 		public function send_query_to_db($query){
-=======
 				$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
 		}
 		/** 
@@ -34,15 +27,10 @@
 		public function send_query_to_db($query){
 				if(!$this->connection->query($query)){
 				     echo ("An error has occured: ", $this->connection->error);
-			    }
->>>>>>> development
-				
+			    }				
 		}
 	
 	}
-<<<<<<< HEAD
-=======
 	//closes any connection when it finishes
-	$this->connection->close();
->>>>>>> development
+	//$this->connection->close();
 ?>
